@@ -352,11 +352,18 @@ justify-self:flex-end;
     .stats .grid,
     .cli .grid,
     .cloud .grid,
+    .features-head .grid,
     .features-main .grid,
+    
     .docs-main .grid {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
     }
+    .features-sub-head .grid , .docs-head .grid
+  {
+  display: flex;
+  flex-direction: column;
+  }
   
     .showcase {
       height: auto;
@@ -396,4 +403,25 @@ justify-self:flex-end;
       grid-column: 1;
     }
   }
+  @media (max-width: 500px) {
+    .navbar {
+      height: 110px;
+    }
+  
+    .navbar .flex {
+      flex-direction: column;
+    }
+  
+    .navbar ul {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .showcase-form {
+      width: 300px;
+    }
+  
+  }
+  
+
   
